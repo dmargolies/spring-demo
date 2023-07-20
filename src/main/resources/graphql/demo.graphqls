@@ -1,0 +1,9 @@
+type Query {
+    greeting(name: String! = "World"): String!
+    fullGreeting(firstName: String!, lastName: String!): Greeting!
+}
+
+type Greeting {
+    fullGreeting: String!
+    shortGreeting: String!
+}
